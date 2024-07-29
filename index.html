@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>work with forms</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <form class="forms" id="authForm" name="auth">
+          <h2>Авторизация</h2>
+          <input
+            type="text"
+            id="authUsername"
+            placeholder="Введите имя пользователя"
+            required
+          />
+          <input
+            type="password"
+            id="authPassword"
+            placeholder="Введите пароль"
+            required
+          />
+          <button type="button" id="loginButton">Войти</button>
+          <p>
+            Нет аккаунта?
+            <span id="toRegister" class="link">Зарегистрируйтесь</span>
+          </p>
+        </form>
+
+        <form
+          class="forms"
+          id="registerForm"
+          name="register"
+          style="display: none"
+        >
+          <h2>Регистрация</h2>
+          <input
+            type="text"
+            id="regUsername"
+            placeholder="Введите имя пользователя"
+            required
+          />
+          <input
+            type="password"
+            id="regPassword"
+            placeholder="Введите пароль"
+            required
+          />
+          <button type="button" id="registerButton">Зарегистрироваться</button>
+          <p>
+            Уже есть аккаунт? <span id="toLogin" class="link">Войдите</span>
+          </p>
+        </form>
+      </div>
+      <div id="message"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
